@@ -14,8 +14,8 @@ let sum4_5 = lab4_5[0] + lab4_5[1] + lab4_5[2] + lab4_5[3] + lab4_5[4] + lab4_5[
 let sum6 = lab6[0] + lab6[1] + lab6[2] + lab6[3] + lab6[4] + lab6[5]
 
 let sums = [sum1, sum2, sum3, sum4_5, sum6]
-
-let total_score = (sum1 + sum2 + sum3 + sum4_5 + sum6)*0.6 + quiz1*0.4
+let avg_lab = (sum1 + sum2 + sum3 + sum4_5 + sum6) / 6
+let total_score = ((avg_lab * 0.6) + (quiz1 * 0.4))*2.5
 
 const results = {
 lab1: [5,5,5,5,10,10], // array of scores for lab1
@@ -25,7 +25,7 @@ lab4_5: [10,5,5,5,5,5,10,10,10,10,3], // array of scores for lab4 and 5
 lab6: [5,5,10,5,5,10], // array of scores for lab6
 quiz1: 38 , // score of quiz1
 sums: [sum1, sum2, sum3, sum4_5, sum6], // array of sums of each lab
-total_score: (sum1 + sum2 + sum3 + sum4_5 + sum6)*0.6 + quiz1*0.4, // computed total score
+total_score: ((avg_lab * 0.6) + (quiz1 * 0.4))*2.5, // computed total score
 }
 
 console.log(results)
